@@ -1,0 +1,159 @@
+.register-page {
+  min-height: calc(100vh - 80px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 24px;
+  background: #fcfaff;
+  color: #302b3d;
+}
+
+.register-card {
+  width: 100%;
+  max-width: 460px;
+  padding: 40px;
+  border: 1px solid #f0ecf5;
+  border-radius: 20px;
+  background: #fff;
+  box-shadow: 0 12px 36px rgb(65 48 85 / 6%);
+}
+
+.register-heading {
+  margin-bottom: 28px;
+  text-align: center;
+}
+
+.register-heading h1 {
+  margin: 0 0 10px;
+  font-size: 1.8rem;
+  font-weight: 700;
+  letter-spacing: -0.04em;
+}
+
+.register-heading p {
+  margin: 0;
+  color: #806c9e;
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+.register-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.register-field {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.register-field label {
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+.register-field input {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 13px 15px;
+  border: 1px solid #e5dced;
+  border-radius: 10px;
+  background: #fff;
+  color: #302b3d;
+  font: inherit;
+  font-size: 0.95rem;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.register-field input::placeholder {
+  color: #aa9bb9;
+}
+
+.register-field input:focus {
+  outline: none;
+  border-color: #a98bc9;
+  box-shadow: 0 0 0 3px rgb(169 139 201 / 18%);
+}
+
+.register-button {
+  width: 100%;
+  margin-top: 4px;
+  padding: 14px;
+  border: none;
+  border-radius: 10px;
+  background: #d8cbea;
+  color: #302b3d;
+  font: inherit;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background 0.2s ease, transform 0.2s ease;
+}
+
+.register-button:hover {
+  background: #c9b8e2;
+  transform: translateY(-1px);
+}
+
+.register-button:focus-visible {
+  outline: 3px solid #a98bc9;
+  outline-offset: 3px;
+}
+
+.register-message {
+  margin: 20px 0 0;
+  padding: 12px;
+  border-radius: 10px;
+  font-size: 0.9rem;
+  line-height: 1.5;
+  text-align: center;
+}
+
+.register-message.error {
+  background: #fff0f0;
+  color: #a83245;
+}
+
+.register-message.success {
+  background: #f0faf3;
+  color: #286b43;
+}
+
+.register-footer {
+  margin: 24px 0 0;
+  color: #806c9e;
+  font-size: 0.9rem;
+  text-align: center;
+}
+
+.register-footer a {
+  color: #76529a;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.register-footer a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 480px) {
+  .register-page {
+    padding: 28px 16px;
+  }
+
+  .register-card {
+    padding: 28px 22px;
+  }
+
+  .register-heading h1 {
+    font-size: 1.55rem;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .register-field input,
+  .register-button {
+    transition: none;
+  }
+}

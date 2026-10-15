@@ -1,0 +1,134 @@
+
+.login-page {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+  background: #fcfaff;
+  color: #302b3d;
+}
+
+.login-card {
+  width: 100%;
+  max-width: 420px;
+  padding: 40px;
+  border: 1px solid #f0ecf5;
+  border-radius: 20px;
+  background: #fff;
+  box-shadow: 0 12px 36px rgb(65 48 85 / 6%);
+}
+
+.login-heading {
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.login-brand {
+  margin: 0 0 24px;
+  font-size: 1.8rem;
+  font-weight: 800;
+  letter-spacing: -0.06em;
+}
+
+.login-brand span {
+  color: #806c9e;
+}
+
+.login-heading h1 {
+  margin: 0 0 10px;
+  font-size: 1.8rem;
+  letter-spacing: -0.04em;
+}
+
+.login-heading p {
+  margin: 0;
+  color: #777184;
+  line-height: 1.6;
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.login-field {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.login-field label {
+  font-size: 0.9rem;
+  font-weight: 650;
+}
+
+.login-field input {
+  width: 100%;
+  min-height: 48px;
+  padding: 0 14px;
+  border: 1px solid #e9e3f0;
+  border-radius: 10px;
+  outline: none;
+  background: #fff;
+  color: #302b3d;
+  transition: border-color 160ms ease, box-shadow 160ms ease;
+}
+
+.login-field input:focus {
+  border-color: #a894c5;
+  box-shadow: 0 0 0 3px rgb(216 203 234 / 45%);
+}
+
+.login-field input::placeholder {
+  color: #aaa3b5;
+}
+
+.login-button {
+  min-height: 48px;
+  margin-top: 4px;
+  border: none;
+  border-radius: 10px;
+  background: #d8cbea;
+  color: #30263f;
+  font: inherit;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background 160ms ease, transform 160ms ease;
+}
+
+.login-button:hover {
+  background: #c9b8e2;
+  transform: translateY(-1px);
+}
+
+.login-footer {
+  margin: 24px 0 0;
+  color: #777184;
+  font-size: 0.9rem;
+  text-align: center;
+}
+
+.login-footer a {
+  color: #806c9e;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.login-footer a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 480px) {
+  .login-card {
+    padding: 30px 24px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .login-field input,
+  .login-button {
+    transition: none;
+  }
+}
